@@ -1,0 +1,29 @@
+.navbar, .jumbotron {
+  border-radius: 0px !important;
+}
+
+.my-jumbotron {
+  background: #4795B7 !important;
+  color: #fff !important;
+  margin-bottom: 0px !important;
+}
+
+.my-jumbotron p button {
+  margin-right: 10px;
+}
+
+.my-jumbotron a,
+.my-jumbotron a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.head-msg {
+  font-size: 20px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-style: italic;
+}
+.head-msg-2 {
+  margin-bottom: 15px !important;
+}

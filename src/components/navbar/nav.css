@@ -1,0 +1,15 @@
+.my-navbar {
+  margin-right: 17px !important;
+}
+
+.navbar {
+  border-radius: 0px !important;
+}
+
+.nav > button {
+  text-align: center;
+  height: 50px;
+  background: #222222;
+  color: #fff;
+  border: 0px;
+}
