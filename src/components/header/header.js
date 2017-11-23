@@ -31,10 +31,17 @@ class Header extends Component {
           }
           <p className="head-msg head-msg-2">Select a poll to see the results and vote.</p>
           { isLoggedInUser &&
-            <p>
-              <Button bsStyle="success" bsSize="large" ><Link to='/new-poll'>New Poll</Link></Button>
-              <Button bsStyle="primary" bsSize="large" ><Link to='/my-polls'>My Polls</Link></Button>
-            </p> 
+            <p> 
+              { !isHomeRoute &&
+                <Link to='/new-poll'><Button bsStyle="success" bsSize="large" >New Poll</Button></Link>
+              }
+              { isHomeRoute &&
+                <p>
+                  <Link to='/new-poll'><Button bsStyle="success" bsSize="large" >New Poll</Button></Link>
+                  <Link to='/my-polls'><Button bsStyle="primary" bsSize="large" >My Polls</Button></Link>
+                </p>
+              }
+            </p>
           }
           { !isLoggedInUser &&
             <p>Please Sign in with Twitter to create new poll.</p>

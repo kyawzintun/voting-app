@@ -77,6 +77,7 @@ class Polls extends Component {
       _this.componentDidMount();
     })
     .catch((err) => {
+      _this.componentDidMount();
       if(err.response.status === 422) {
         _this.notifyInfo(err.response.data);
       }else {
